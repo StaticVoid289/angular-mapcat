@@ -1,0 +1,46 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+}
+
+div.DetailAction {
+  background-color: green;
+  color: #fff;
+  padding: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  border-radius: 2px;
+}
+
+div.DetailAction:hover {
+  background-color: #060;
+}
+
+div.gutter-top {
+  margin-top: 15px;
+}
+
+div.gutter-bottom {
+  margin-bottom: 15px;
+}
+
+div.gutter-left {
+    margin-left: 15px;
+}
+
+div.gutter-right {
+    margin-right: 15px;
+}
+
+.answerLbl {
+  color: #515a61;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 20px;
+  padding: 15px;
+  min-height: 65px;
+  border: solid 2px;
+  border-radius: 10px;
+}

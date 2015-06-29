@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="directedMap">
+<head>
+  <meta charset="utf-8">
+  <title>Coding Challenge</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="directedMapCtrl">
+
+  <div class="container-fluid gutter-top">
+
+    <div class="row">
+      <div class="col-md-2">
+
+        <div class="DetailAction" ng-repeat="x in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" ng-click="calculate(x)">Question {{x}}</div>
+
+      </div>
+
+      <div class="col-md-10">
+
+        <div>
+          <h1>CrossChx Coding Challenge - Drake Sigler</h1>
+        </div>
+
+        <div>
+          <h2>Question</h2>
+        </div>
+        <div class="answerLbl">
+          {{question}}
+        </div>
+
+        <div>
+          <h3>Calculated Answer</h3>
+        </div>
+        <div class="answerLbl">
+          {{answer.answerNumber > 0 ? answer.answerNumber : ""}} {{answer.answerString != "" ? "(" + answer.answerString + ")" : ""}}</br>
+        </div>
+
+        <div>
+          <h3>Correct Answer</h3>
+        </div>
+        <div class="answerLbl">
+          {{correctAnswer}}
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
